@@ -1,0 +1,70 @@
+//Extend
+.index-featured-posts
+  .author
+    padding-right: $md-size
+    a
+      font-style: italic
+      text-transform: capitalize
+      font-weight: 600
+      color: $new-red
+  .date
+    color: $index-excerpt
+    font-style: italic
+    padding-left: $md-size
+  h2
+    padding: $base-size 0
+  .excerpt
+    color: $index-excerpt
+    padding-top: $normal-size
+    font-weight: 600
+    font-size: $base-size + .1rem
+.index-hero-post
+  background: white
+  h2
+    font-size: 2 * $base-size
+    font-family: $rubik-font
+  .excerpt::after
+    @extend .index_view_more::after
+    max-width: 95%
+.index-category
+  font-family: $rubik-font
+  text-transform: uppercase
+  color: $new-red
+  font-weight: 600
+  letter-spacing: 1px
+  a
+    color: $new-red
+    vertical-align: -webkit-baseline-middle
+  span
+    vertical-align: sub
+
+
+//Other Loop Design
+.other-loop
+  margin-bottom: $md-size
+  .index-featured-posts
+    h2
+      font-size: $md-size - .4rem
+    img
+      height: 234px
+      width: 100%
+      object-fit: cover
+.index-other-body-info
+  padding: 3% 4%
+.index-featured-posts
+  background: white
+.other-loop-post-details
+  p
+    font-size: $normal-size + .3rem
+    a
+      color: $index-excerpt
+.fa-comment-alt
+  color: $yellow
+.author
+  color: $index-excerpt
+.fa-user
+  color: $green
+.fa-circle
+  font-size: $normal-size - .2rem
+  vertical-align: middle
+  margin: 0 $base-size

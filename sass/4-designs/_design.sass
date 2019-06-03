@@ -1,0 +1,68 @@
+//Header Section Design
+.header
+  background: white
+  padding: $md-size 0
+  border-bottom: 1px solid $border-color
+  ul
+    li
+      display: inline
+      margin: 0 $normal-size
+      a
+        font-size: $base-size + .1rem
+        font-weight: 600
+        text-transform: capitalize
+.header_socials
+  ul
+    li:last-child
+      padding-right: $normal-size
+
+//Menu Sub Menu
+.menu-item-has-children
+  position: relative
+  .sub-menu
+    display: none
+.menu-item-has-children:hover
+  .sub-menu
+    display: block
+    position: absolute
+    left: 0
+    background: white
+    z-index: 1
+    text-align: left
+    width: 220px
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2)
+    li
+      display: block
+      padding: .5rem $normal-size
+
+      &:hover
+        background: $new-red
+        margin: 0
+
+        a
+          color: white
+      a
+        display: block
+
+//Footer Design
+footer
+  background: $custom-black
+  padding: $md-size 0
+  p
+    color: white
+  a
+    color: $new-red
+.copyright
+  text-align: center
+.footer-top::after
+  @extend .index_view_more::after
+  height: 1px
+  background: #eaeaea30
+.footer-top
+  ul
+    li
+      display: inline
+      margin: 0 $normal-size
+      font-size: $base-size
+      a
+        color: white

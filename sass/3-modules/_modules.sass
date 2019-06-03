@@ -1,0 +1,217 @@
+//Common Module
+.index_view_more
+  a
+    color: $index-excerpt
+    font-size: $base-size
+    font-weight: 600
+.index_view_more::after
+    content: ""
+    height: 2px
+    background: $border-color
+    display: block
+    margin: $base-size 0
+
+//Index Author
+.index_author
+  position: relative
+  cursor: pointer
+.index_author_info
+  position: absolute
+  z-index: 1
+  bottom: 0
+  background: $yellow
+  width: 207px
+  max-width: 207px
+  width: 100%
+  padding: $normal-size 0
+  text-align: center
+
+
+//Section Title
+.section_title
+  background: white
+  color: $custom-black
+  p
+    text-transform: uppercase
+    letter-spacing: 1px
+    padding: $normal-size 0
+  h1
+    font-size: $three-size
+    text-transform: capitalize
+    font-weight: 700
+  .fa-home
+    font-size: $base-size + .3rem
+    padding-right: $md-size
+  .fa-chevron-right
+    padding-right: $md-size
+    color: $index-excerpt
+    font-size: $normal-size - .2rem
+    vertical-align: middle
+  .category_first_category, .category_second_category
+    font-family: $rubik-font
+    font-size: $normal-size + .1rem
+  .category_first_category
+    font-weight: 500
+  .category_second_category
+    font-size: $normal-size - .1rem
+
+
+//Comment Section
+.single_post_comments
+  margin: $md-size 0
+  padding: 2% 5%
+  background: white
+  .comments
+    font-size: $base-size
+    textarea
+      width: 100%
+      margin: $normal-size 0
+      border-radius: 4px
+      padding: $base-size
+      border-color: $border-color
+    p.form-submit
+      text-align: right
+      .submit
+        background: $custom-black
+        color: white
+        border: none
+        padding: $normal-size $md-size
+        cursor: pointer
+    h3.comment-reply-title
+      font-family: $rubik-font
+      color: $index-excerpt
+      padding: $normal-size 0
+      text-transform: uppercase
+    .logged-in-as
+      padding: $base-size 0
+.comment-form-author,.comment-form-email,.comment-form-url
+    display: inline
+    input
+      border: 1px solid $border-color
+      width: 30%
+      margin-right: $base-size
+      padding: .5rem $normal-size
+      margin-bottom: $base-size
+.comment-form-url
+    input
+      margin-right: 0
+.comment-body:last-child
+        border-bottom: none
+.comment-body
+  border-bottom: 1px solid $border-color
+  padding: $md-size 0
+  p
+    max-width: 480px
+    color: $index-excerpt
+  .comment-author
+    position: relative
+    img
+      width: 4.7rem
+      height:  7.5rem
+      border-radius: 50%
+.fn,.says
+  position: relative
+  top: -8px
+  left: 7px
+  font-family: $rubik-font
+.fn
+  text-transform: capitalize
+  color: $new-red
+.says
+  text-transform: capitalize
+.comment-meta
+    position: relative
+    top: -38px
+    left: 58px
+.comment
+  ul.children
+    li
+      padding-left: 5%
+.reply
+  text-align: right
+  position: relative
+  top: -33px
+  a
+    background: $custom-black
+    color: white
+    padding: .6rem $md-size
+.logged-in-as
+  text-transform: capitalize
+
+
+//Pagination Design
+.index_pagination
+  text-align: center
+  padding: .7rem 0 $three-size 0
+  .pagination
+    display: block
+    .page-numbers
+      padding: $normal-size $base-size + .1rem
+      background: white
+      font-weight: bold
+      margin: 0 .3rem
+      color: black
+      font-size: $base-size
+      border-radius: 5px
+    .current
+      background: $new-red
+      color: white
+
+
+//Sidebar Design
+.sidebar
+  background: white
+  padding: 2% 3%
+.sidebar_recent_title
+  font-family: $rubik-font
+  font-size: 2 * $base-size
+  text-align: center
+  &::after
+    content: ""
+    max-width: 80px
+    margin: $normal-size auto
+    height: 2px
+    background: $new-red
+    display: block
+.widget_recent_entries
+  ul
+    li
+      margin: $base-size 0
+  img
+    border-radius: 50%
+    height: 75px
+    width: 75px
+    object-fit: cover
+  .row
+    h3
+      font-size: $base-size + .2rem
+      font-family: $rubik-font
+      font-weight: 400 !important
+    .col-4
+      text-align: center
+.widget_search
+  .search
+    text-align: center
+    margin: $base-size 0
+    input
+      border: none
+      border: 1px solid $border-color
+      padding: 8px 12px
+      background: #f7f7f7
+      outline: none
+      font-size: $base-size
+      width: 75%
+      &::placeholder
+        font-size: $base-size
+    button
+      padding: 8px 12px
+      border: none
+      background: $new-red
+      color: white
+      font-size: $base-size
+      position: relative
+      left: -3px
+      border: 1px solid $new-red
+      cursor: pointer
+      i
+        font-size: $base-size
